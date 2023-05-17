@@ -135,7 +135,7 @@ const SignUp = () => {
           type="text"
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
-          value={formik.values.fullName}
+          value={formik.values.fullName.trim()}
           label={"Full Name"}
         />
         {formik.touched.fullName && formik.errors.fullName && (
@@ -148,7 +148,7 @@ const SignUp = () => {
           type="text"
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
-          value={formik.values.email}
+          value={formik.values.email.trim()}
           label={"Email"}
         />
         {formik.touched.email && formik.errors.email && (
@@ -161,7 +161,7 @@ const SignUp = () => {
           type="password"
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
-          value={formik.values.password}
+          value={formik.values.password.trim()}
           label={"Password"}
         />
         {formik.touched.password && formik.errors.password && (
