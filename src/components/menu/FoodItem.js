@@ -12,7 +12,7 @@ const FoodItem = (props) => {
       dispatch(
         uiActions.putNewAlert({
           status: "error",
-          message: "first you must logging in",
+          message: "first you must log in",
         })
       );
       dispatch(popAsync(5000));
