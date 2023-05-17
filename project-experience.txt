@@ -1,0 +1,42 @@
+1 - learn more about responsive design and make websites on principles.
+2 - have a figma file for ui/ux of project for more speed
+3 - for next project make mobiles first for responsive design
+4 - learn a little about chat gpt and its extension to speed up projects
+5 - learn react router advance and its udemy course
+6 - learn more about promise and fetching data from data base
+7 - make your projects with vite for more speed and less dependency
+8 - a little about how to implement sass in tailwind 
+9 - make special classes for buttons input and... in separate files or use custom js function for more customization
+10 - make photos smaller and a size of less than 500kb and use overflow hidden on pictures for special purpose
+11 - use more library like formik, axois or Framer Motion (learn them)
+12 - learn about optimization and hooks like useMemo and useCallback
+
+middle purpose (for next projects) :
+    next.js
+    responsive design
+    advance react router
+    Authentication
+    version control(git)
+    axios 
+    animation frameworks
+    AOS (animation on scroll
+
+
+)
+    ssas
+
+
+long purpose:
+    full next js
+    three js
+    type script
+    material ui
+    pwa with react
+    ui / ux
+
+
+additional purpose:
+    mern course(mongo db, express js, react js, node js)
+    react native
+
+

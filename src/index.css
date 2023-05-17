@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Inter&family=Open+Sans&family=Poppins&family=Rubik&display=swap");
+
+@layer base {
+  * {
+    @apply m-0 box-border p-0 font-rubik;
+  }
+  body {
+    @apply relative bg-back bg-fixed;
+  }
+  .navNotActive {
+    @apply text-white transition hover:border-b-2 hover:border-indigo-400 hover:text-indigo-500 md:text-[#444];
+  }
+  .navActive {
+    @apply text-orange-600 transition;
+  }
+  .menuNotActive {
+    @apply bg-for hover:-translate-y-3 hover:scale-105 hover:bg-slate-700 hover:shadow-lg;
+  }
+  .menuActive {
+    @apply bg-orange-500 hover:bg-orange-600;
+  }
+}
+
+* {
+  scrollbar-width: thin;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: lightgray;
+  margin: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(59, 59, 59);
+  border-radius: 8px;
+}

@@ -1,0 +1,27 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "yarn.lock": true,
+    "workspace.code-workspace": true,
+    "README.md": true,
+    ".gitignore": true,
+    ".vscode": true,
+    "/P:/ReactYarn/RouterPractice/build": true,
+    "/P:/ReactYarn/RouterPractice/node_modules": true,
+    "/P:/ReactYarn/RouterPractice/node_modules/.cache": true,
+    "/P:/ReactYarn/RouterPractice/public": true,
+    "/P:/ReactYarn/RouterPractice/.gitignore": true,
+    "/P:/Big Projects/food-shop-fail/.gitignore": true
+  },
+  "cSpell.words": [
+    "Chavoshi",
+    "Formik",
+    "Parsa"
+  ],
+  "hide-files.files": []
+}
