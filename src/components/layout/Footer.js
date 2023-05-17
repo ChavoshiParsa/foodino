@@ -68,7 +68,7 @@ const Footer = () => {
         </ul>
       </div>
       <p className="self-end text-center text-sm text-back">
-        This Website has made by Parsa Chavoshi
+        This Website has been made by Parsa Chavoshi
       </p>
     </footer>
   );
