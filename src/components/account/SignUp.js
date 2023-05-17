@@ -27,13 +27,16 @@ const SignUp = () => {
     },
     validationSchema: Yup.object({
       fullName: Yup.string()
+        .trim()
         .min(3, "Full name must be at least 3 characters long")
         .max(15, "Must be 15 characters or less")
         .required("Full name is required"),
       email: Yup.string()
+        .trim()
         .email("Invalid email address")
         .required("Email is required"),
       password: Yup.string()
+        .trim()
         .min(6, "Password must be at least 6 characters long")
         .required("Password is required"),
     }),
@@ -89,7 +92,6 @@ const SignUp = () => {
           );
           dispatch(popAsync(5000));
         });
-        
     },
   });
 
@@ -133,7 +135,7 @@ const SignUp = () => {
           type="text"
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
-          value={formik.values.fullName.trim()}
+          value={formik.values.fullName}
           label={"Full Name"}
         />
         {formik.touched.fullName && formik.errors.fullName && (
@@ -146,7 +148,7 @@ const SignUp = () => {
           type="text"
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
-          value={formik.values.email.trim()}
+          value={formik.values.email}
           label={"Email"}
         />
         {formik.touched.email && formik.errors.email && (
@@ -159,7 +161,7 @@ const SignUp = () => {
           type="password"
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
-          value={formik.values.password.trim()}
+          value={formik.values.password}
           label={"Password"}
         />
         {formik.touched.password && formik.errors.password && (

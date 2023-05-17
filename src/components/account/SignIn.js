@@ -19,9 +19,11 @@ const SignIn = () => {
     },
     validationSchema: Yup.object({
       email: Yup.string()
+        .trim()
         .email("Invalid email address")
         .required("Enter your Email"),
       password: Yup.string()
+        .trim()
         .min(6, "Password must be at least 6 characters long")
         .required("Enter your password"),
     }),
@@ -96,7 +98,7 @@ const SignIn = () => {
           type="text"
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
-          value={formik.values.email.trim()}
+          value={formik.values.email}
           label={"Email"}
         />
         {formik.touched.email && formik.errors.email && (
@@ -109,7 +111,7 @@ const SignIn = () => {
           type="password"
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
-          value={formik.values.password.trim()}
+          value={formik.values.password}
           label={"Password"}
         />
         {formik.touched.password && formik.errors.password && (
