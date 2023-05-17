@@ -96,7 +96,7 @@ const SignIn = () => {
           type="text"
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
-          value={formik.values.email}
+          value={formik.values.email.trim()}
           label={"Email"}
         />
         {formik.touched.email && formik.errors.email && (
@@ -109,7 +109,7 @@ const SignIn = () => {
           type="password"
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
-          value={formik.values.password}
+          value={formik.values.password.trim()}
           label={"Password"}
         />
         {formik.touched.password && formik.errors.password && (
