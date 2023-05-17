@@ -7,7 +7,7 @@ const Info = () => {
       className="my-8 flex flex-col items-center justify-center space-y-7"
     >
       <h1 className="text-center text-2xl underline decoration-orange-500 underline-offset-[7px] md:mt-10 md:text-3xl">
-        Watch It Works
+        Watch How It Works
       </h1>
       <div className="flex w-10/12 flex-col items-center justify-around space-y-5 md:h-96 md:flex-row md:space-y-0">
         {infoData.map((item) => (
