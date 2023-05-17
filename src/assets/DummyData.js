@@ -25,6 +25,30 @@ export const infoData = [
   },
 ];
 
+export const foodData = [
+  {
+    id: "0",
+    name: "Grilled Lamb",
+    type: "foods",
+    rate: 5,
+    price: 32,
+  },
+  {
+    id: "1",
+    name: "Italian Pasta",
+    type: "foods",
+    rate: 3,
+    price: 42,
+  },
+  {
+    id: "2",
+    name: "Italian Pizza",
+    type: "foods",
+    rate: 4,
+    price: 12,
+  },
+];
+
 // export const foodData = [
 //   {
 //     id: "0",

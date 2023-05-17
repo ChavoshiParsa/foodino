@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
-import { useSelector } from "react-redux";
 import FoodItem from "../menu/FoodItem";
-import { useEffect, useState } from "react";
+import { foodData } from "../../assets/DummyData";
 
 /*const importAll = (r) => {
   let images = {};
@@ -28,33 +27,8 @@ const strLimiter = (str, numFromLast) => {
 };*/
 
 export const imp = (name) => require(`./../../assets/Food-Images/${name}.png`);
-let reducedFoodData = [];
 
 const ChosenMenu = () => {
-  const foodData = useSelector((state) => state.foodData.items);
-  const [foodItems, setFoodItems] = useState();
-
-  useEffect(() => {
-    if (foodData.length === 7) {
-      for (let i = 0; i < 3; i++) {
-        reducedFoodData.push(foodData[i]);
-      }
-      setFoodItems(
-        reducedFoodData.map((item) => (
-          <FoodItem
-            key={"k" + item.id}
-            id={"i" + item.id}
-            src={imp(item.name)}
-            name={item.name}
-            alt={item.name}
-            rate={item.rate}
-            price={item.price}
-          />
-        ))
-      );
-    }
-  }, [foodData]);
-
   return (
     <section
       id="menu"
@@ -65,7 +39,17 @@ const ChosenMenu = () => {
       </h1>
       <div className="relative flex flex-col items-center justify-center">
         <div className="grid grid-cols-1 gap-y-12 overflow-hidden p-10 pt-14 sm:grid-cols-2 sm:gap-6 md:gap-20 lg:grid-cols-3 2xl:grid-cols-4">
-          {foodItems}
+          {foodData.map((item) => (
+            <FoodItem
+              key={"k" + item.id}
+              id={"i" + item.id}
+              src={imp(item.name)}
+              name={item.name}
+              alt={item.name}
+              rate={item.rate}
+              price={item.price}
+            />
+          ))}
         </div>
 
         <Link
